@@ -158,11 +158,18 @@ body{
     display: none;
 }
 @media screen and (max-width: 1300px) {
+    /* .container--width-1170{
+        padding: 0 15px;
+    } */
+    .header__logo{
+        margin: 25px auto 25px 30px;
+    }
     .header__nav-list{
         display: none;
     }
     .hamburger{
         display: block;
+        margin-right: 30px;
     }
     .menu{
         display: hidden;
@@ -178,8 +185,26 @@ body{
         display: block;
         padding: 25px 0;
     }
+    .about-us{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-us__heading{
+        margin: 0;
+    }
+    .about-us__desc-container{
+        text-align: center;
+        padding: 0 30px;
+    }
     .projects__container{
         display: flex;
         flex-direction: column;
+    }
+    .footer__bottom{
+        text-align: center;
+    }
+    .footer__copyright{
+        color: #999;
     }
 }
