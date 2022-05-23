@@ -58,12 +58,12 @@ body{
 }
 .banner__profile{
     margin: 25px 0 0 0;
-    /* padding-bottom: 350px; */
-    font-weight: 500;
-    font-size:28px;
+}
+.section-title{
+    font-weight: 600;
+    font-size: 36px;
     color: #333333;
 }
-
 .about-us{
     padding: 100px 0;
     display: flex;
@@ -86,9 +86,7 @@ body{
     line-height: 1.6;
     color: #333333;
 }
-
-.about-us__more-btn{
-    margin-top: 25px;
+.btn{
     text-transform: uppercase;
     font-weight: 500;
     font-size: 16px;
@@ -98,3 +96,24 @@ body{
     border-radius: 4px;
     background-color: transparent;
 }
+.about-us__read-more{
+    margin-top: 25px;
+}
+
+.projects{
+    padding:100px 0;
+    text-align: center;
+}
+.projects__container{
+    padding:50px 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 34px;
+}
+.projects__heading{
+    margin: 0;
+    text-align: center;
+}
+
