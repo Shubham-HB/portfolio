@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 <body>
@@ -18,9 +19,22 @@
                     <li class="header__nav-links">Work</li>
                     <li class="header__nav-links">Contact</li>
                 </ul>
+                <button class="hamburger" id="hamburger">
+                    <!-- material icons https://material.io/resources/icons/ -->
+                    <i class="menuIcon material-icons">menu</i>
+                    <!-- <i class="closeIcon material-icons">close</i> -->
+                </button>
             </nav>
         </div>
     </header>
+    <nav class="menu" id="menu">
+        <ul class="menu__nav-list">
+            <li class="menu__nav-links">Home</li>
+            <li class="menu__nav-links">About</li>
+            <li class="menu__nav-links">Work</li>
+            <li class="menu__nav-links">Contact</li>
+        </ul>
+    </nav>
     <main>
         <section class="banner banner--image" id="banner">
             <h1 class="banner__intro">Hey I am John</h1>
@@ -72,5 +86,6 @@
             <span class="footer__copyright">copyright &#64 2020</span>
         </div>
     </footer>
+    <script src="./index.js"></script>
 </body>
 </html>
