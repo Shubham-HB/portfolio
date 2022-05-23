@@ -3,6 +3,8 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 .container--width-1170{
     max-width: 1170px;
@@ -96,6 +98,10 @@ body{
     border-radius: 4px;
     background-color: transparent;
 }
+.btn:hover{
+    background: #333333;
+    color: #ffffff;
+}
 .about-us__read-more{
     margin-top: 25px;
 }
@@ -103,6 +109,7 @@ body{
 .projects{
     padding:100px 0;
     text-align: center;
+    background-color: #f7fbff;
 }
 .projects__container{
     padding:50px 0;
@@ -117,3 +124,29 @@ body{
     text-align: center;
 }
 
+.footer{
+    text-align: center;
+}
+.footer__sub-title{
+    margin:34px 0;
+    font-weight: normal;
+    font-size: 18px;
+    color: #333333;
+    font-style: italic;
+}
+.footer__section{
+    border:1px solid #f2f2f2;
+    padding: 100px 0;
+}
+.footer__bottom{
+    text-align: left;
+}
+.footer__copyright{
+    display: block;
+    margin: 45px 0;
+    font-weight: lighter;
+    color: #333333;
+}
+.footer__icon{
+    margin-right: 10px;
+}
