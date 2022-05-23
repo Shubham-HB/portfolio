@@ -200,6 +200,19 @@ body{
     .projects__container{
         display: flex;
         flex-direction: column;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .projects__heading{
+        padding: 0 30px;
+    }
+    .projects__image--responsive{
+        width: 100%;
+        height: auto;
+    }
+    .footer__section{
+        padding-left: 30px;
+        padding-right: 30px;
     }
     .footer__bottom{
         text-align: center;
