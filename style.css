@@ -13,6 +13,8 @@ body{
     margin: 0 auto;
 }
 
+/* ************ Header section ************ */
+
 .header__container{
     display: flex;
     justify-content:space-between;
@@ -37,6 +39,8 @@ body{
     font-size: 16px;
     color: #333333;
 }
+
+/* ************ Banner section ************ */
 
 .banner{
     text-align: center;
@@ -73,6 +77,8 @@ body{
     font-size: 36px;
     color: #333333;
 }
+
+/* ************ About Us section ************ */
 
 .about-us{
     /* padding on top and botton is 100px */
@@ -121,6 +127,8 @@ body{
     margin-top: 25px;
 }
 
+/* ************ Projects section ************ */
+
 .projects{
     padding:100px 0;
     text-align: center;
@@ -140,6 +148,8 @@ body{
     margin: 0;
     text-align: center;
 }
+
+/* ************ Footer section ************ */
 
 .footer{
     text-align: center;
@@ -173,6 +183,8 @@ body{
     margin-right: 10px;
 }
 
+/* ************ Hamburger Menu ************ */
+
 .hamburger{
     display: none;
 }
@@ -181,9 +193,13 @@ body{
     display: none;
 }
 
+
+
 /**************************************************************************
 *
 *   Responsive css for width under 1300px
+*
+***************************************************************************
 */
 
 @media screen and (max-width: 1300px) {
@@ -259,7 +275,7 @@ body{
     .footer__bottom{
         text-align: center;
     }
-    
+
     .footer__copyright{
         color: #999;
     }
