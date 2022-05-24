@@ -3,30 +3,34 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    /* reset margin and padding */
     margin: 0;
     padding: 0;
 }
+
 .container--width-1170{
     max-width: 1170px;
     margin: 0 auto;
 }
+
 .header__container{
-    height: 20vh;
     display: flex;
     justify-content:space-between;
     align-items: center;
 }
 
 .header__logo{
+    /* margin auto on right */
     margin:50px auto 50px 0px;
 }
 
 .header__nav-list{
-    margin: 65px 0;
-    padding: 0;
     display: flex;
     list-style: none;
+    margin: 65px 0;
+    padding: 0;
 }
+
 .header__nav-links{
     padding-right: 70px;
     font-weight: 500;
@@ -36,7 +40,7 @@ body{
 
 .banner{
     text-align: center;
-    /* max-height: 80vh; */
+    /* height is 100 % of viewport height */
     height: 100vh;
     display: flex;
     align-items: center;
@@ -58,23 +62,30 @@ body{
     /* padding-top: 350px; */
     margin: 0;
 }
+
 .banner__profile{
+    /* margin on top is 25px */
     margin: 25px 0 0 0;
 }
+
 .section-title{
     font-weight: 600;
     font-size: 36px;
     color: #333333;
 }
+
 .about-us{
+    /* padding on top and botton is 100px */
     padding: 100px 0;
     display: flex;
     justify-content: center;
     align-items: flex-start;
 }
+
 .about-us__heading{
-    margin: 0;
-    margin-right: 220px;
+    /* set all margin to 0 except right */
+    margin: 0 220px 0 0;
+    /* set width to contain the full content */
     min-width: fit-content;
     font-weight: 600;
     font-size: 36px;
@@ -88,6 +99,7 @@ body{
     line-height: 1.6;
     color: #333333;
 }
+
 .btn{
     text-transform: uppercase;
     font-weight: 500;
@@ -98,10 +110,13 @@ body{
     border-radius: 4px;
     background-color: transparent;
 }
+
+/* on hover change bg and text color */
 .btn:hover{
     background: #333333;
     color: #ffffff;
 }
+
 .about-us__read-more{
     margin-top: 25px;
 }
@@ -111,6 +126,7 @@ body{
     text-align: center;
     background-color: #f7fbff;
 }
+
 .projects__container{
     padding:50px 0;
     margin: 0 auto;
@@ -119,6 +135,7 @@ body{
     grid-template-rows: auto;
     gap: 34px;
 }
+
 .projects__heading{
     margin: 0;
     text-align: center;
@@ -127,6 +144,7 @@ body{
 .footer{
     text-align: center;
 }
+
 .footer__sub-title{
     margin:34px 0;
     font-weight: normal;
@@ -134,19 +152,23 @@ body{
     color: #333333;
     font-style: italic;
 }
+
 .footer__section{
     border:1px solid #f2f2f2;
     padding: 100px 0;
 }
+
 .footer__bottom{
     text-align: left;
 }
+
 .footer__copyright{
     display: block;
     margin: 45px 0;
     font-weight: lighter;
     color: #333333;
 }
+
 .footer__icon{
     margin-right: 10px;
 }
@@ -154,70 +176,92 @@ body{
 .hamburger{
     display: none;
 }
+
 .menu{
     display: none;
 }
+
+/**************************************************************************
+*
+*   Responsive css for width under 1300px
+*/
+
 @media screen and (max-width: 1300px) {
-    /* .container--width-1170{
-        padding: 0 15px;
-    } */
+
     .header__logo{
         margin: 25px auto 25px 30px;
     }
+
     .header__nav-list{
         display: none;
     }
+
     .hamburger{
         display: block;
         margin-right: 30px;
     }
+
     .menu{
         display: hidden;
-        position: relative;
+        position: absolute;
         z-index: 10;
-        box-shadow: 0px 0px 5px 0px #878787;
+        background: white;
+        width: 100%;
+        box-shadow: 0px 0px 5px 0px #878787; 
     }
+
     .menu__nav-list{
         list-style: none;
         margin: 0;
     }
+
     .menu__nav-links{
         display: block;
         padding: 25px 0;
     }
+
     .about-us{
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
     .about-us__heading{
         margin: 0;
     }
+
     .about-us__desc-container{
         text-align: center;
         padding: 0 30px;
     }
+
     .projects__container{
         display: flex;
         flex-direction: column;
         padding-right: 30px;
         padding-left: 30px;
     }
+
     .projects__heading{
         padding: 0 30px;
     }
+
     .projects__image--responsive{
         width: 100%;
         height: auto;
     }
+
     .footer__section{
         padding-left: 30px;
         padding-right: 30px;
     }
+
     .footer__bottom{
         text-align: center;
     }
+    
     .footer__copyright{
         color: #999;
     }
+
 }
