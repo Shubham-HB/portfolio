@@ -71,6 +71,9 @@ body{
 .banner__profile{
     /* margin on top is 25px */
     margin: 25px 0 0 0;
+    font-weight: 500;
+    font-size: 28px;
+    color: #333333;
 }
 
 .section-title{
